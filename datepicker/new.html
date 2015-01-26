@@ -1,0 +1,49 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Datepicker - Format date</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+
+      $(document).ready(function(){
+          $( "#format1" ).datepicker({
+              dateFormat: "yy-mm-dd",
+              //maxDate: "+1y +1m +1w",
+              //minDate: new Date(2014,5 -7, 5),
+              yearRange: "2002:2012"
+          });
+          $( "#format2" ).datepicker({
+              dateFormat: "d M, y",
+              maxDate: "+1y +1m +1w",
+              minDate: new Date(2014,5 -7, 5)
+          });
+                  $( "#format3" ).datepicker({
+                      dateFormat: "d MM, y"
+                  });
+
+                  $( "#format4" ).datepicker({
+                      dateFormat: "DD, d MM, yy"
+                  });
+                  $( "#format5" ).datepicker({
+                      dateFormat: "&apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy"
+                  });
+      });
+    </script>
+</head>
+<body>
+
+<lebel>Date:</lebel>
+    <input id="format1" value="yy-mm-dd"><br>
+    <input id="format2" value="d M, y"><br>
+    <input id="format3" value="d MM, y"><br>
+    <input id="format4" value="DD, d MM, yy"><br>
+    <input id="format5" value="&apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy"><br>
+
+</body>
+</html>
