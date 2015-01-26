@@ -15,8 +15,12 @@
           $( "#format1" ).datepicker({
               dateFormat: "yy-mm-dd",
               //maxDate: "+1y +1m +1w",
-              //minDate: new Date(2014,5 -7, 5),
-              yearRange: "2002:2012"
+              maxDate: "+15d",
+              //minDate: new Date(2014,5 -7, 5)
+              minDate:"-15d",
+              numberOfMonths: [ 2,2 ],
+              navigationAsDateFormat: true
+             // yearRange: "2002:2012"
           });
           $( "#format2" ).datepicker({
               dateFormat: "d M, y",
