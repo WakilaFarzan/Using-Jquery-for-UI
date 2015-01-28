@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        td {
+            width: 40px;
+            background: green;
+        }
+    </style>
+
+</head>
+<body>
+
+<table border="1">
+    <tr><td>Value 1</td><td></td></tr>
+    <tr><td>Value 2</td><td></td></tr>
+</table>
+<br>
+
+<div>John Resig</div>
+<div>George Martin</div>
+<div>Malcom John Sinclair</div>
+<div>J. Ohn</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $( "td:parent" ).fadeTo( 1500, 0.3 );
+    $( "div:contains('John')" ).css( "text-decoration", "underline" );
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+  <style>
+
+      div, span, p {
+          width: 126px;
+          height: 60px;
+          float: left;
+          padding: 3px;
+          margin: 2px;
+          background-color: #eee;
+          font-size: 14px;
+      }
+
+  </style>
+
+</head>
+<body>
+
+<div>div</div>
+<p class="myClass">p class="myClass"</p>
+<p class="notMyClass">p class="notMyClass"</p>
+<span>span</span>
+
+
+
+<!--<div>DIV1</div>-->
+<!--<div>DIV2</div>-->
+<!--<span>SPAN</span>-->
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+
+    //$( "div" ).css( "border", "9px solid red" );
+    $( "div, span, p.myClass" ).css( "border", "3px solid red" );
+
+</script>
+
+</body>
+</html>

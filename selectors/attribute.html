@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+    a {
+    display: inline-block;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+<input name="newsletter">
+<input name="milkman">
+<input name="newsboy">
+<br>
+<a href="example.html" hreflang="en">Some text</a>
+<a href="example.html" hreflang="en-UK">Some other text</a>
+<a href="example.html" hreflang="english">will not be outlined</a>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $( "input[name^='news']" ).val( "news here!" );
+
+    $( "a[hreflang|='en']" ).css( "border", "3px dotted green" );
+
+</script>
+
+</body>
+</html>
