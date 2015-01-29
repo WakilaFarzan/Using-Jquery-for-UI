@@ -16,10 +16,15 @@ function __autoload($class_name){
 //$student= new Student();
 
 $course= new Course();
+//echo $course->title;
+//echo "<br>";
+$course->title='bgfdjkgl ';
 echo $course->title;
 echo "<br>";
-$course->title='Course Title';
-echo $course->title;
-echo "<br>";
-var_dump($course);
+
+//$course->getCredits('hello','hi');
+//
+//$course->getLessons();
+
+//var_dump($course);
 

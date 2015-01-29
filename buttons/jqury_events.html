@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<p>jQuery makes it straightforward to set up event-driven responses on page elements.
+    These events are often triggered by the end user's interaction with the page,
+    such as when text is entered into a form element or the mouse pointer is moved.
+    In some cases, such as the page load and unload events, the browser itself will trigger the event.</p>
+
+<form action="">
+    <input type="text" name="name">
+    <button type="button">Click Me!</button>
+
+</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+
+//    $(document).ready(function(){
+//        alert("i want to sleep")
+//    })
+
+
+//    $(window).bind("load", function() {
+//        alert("i want to sleep");
+//    });
+
+
+    $(document).ready(function(){
+//        $('button').bind("click",function(){
+//            alert("i want to sleep");
+//        }),
+//                $('button').bind("mouseover",function(){
+//                    alert("mouse over on button");
+//                })
+//        $('button').bind("dblclick",function(){
+//            alert("double clicked");
+//        })
+//        $('button').bind("mouseenter",function(){
+//            alert("entered mouse");
+//        })
+//        $('button').bind("mouseleave",function(){
+//            alert("leaving mouse");
+//        })
+//        $('input').bind("keydown",function(){
+//          alert("you press a key");
+//         })
+
+        $('input').bind("keyup",function(){
+            alert("you release a key");
+        })
+
+
+    })
+
+
+
+</script>
+
+</body>
+</html>
